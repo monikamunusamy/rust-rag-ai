@@ -1,20 +1,14 @@
 # 🦀 Rust RAG AI
 
-A simple **Retrieval-Augmented Generation (RAG)** project built in **Rust**.  
-It connects to an LLM (OpenAI or Hugging Face) and can answer questions either:
-- Using **documents** (RAG mode), or  
-- Using **direct LLM chat** (no retrieval).  
+A minimal Retrieval-Augmented Generation (RAG) demo in Rust, using OpenAI or Hugging Face models.
 
 ---
 
 ## 🚀 Features
-- Written in **Rust**
-- Uses **async (Tokio) runtime**
-- Supports **OpenAI API** (customizable for Hugging Face too)
-- Simple **CLI interface** for:
-  - Indexing documents
-  - Chatting with the LLM
-  - Running in pure LLM mode (no files)
+- 📚 Index your documents into embeddings
+- 🔍 Retrieve the most relevant chunks
+- 💬 Ask questions and get AI-powered answers
+- 🦀 100% Rust implementation with async/await
 
 ---
 
@@ -25,11 +19,61 @@ If you don’t have Rust yet:
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
- *** ###2. Clone this repository ***
-
+### 2. Clone this repository
+bash
+Copy code
 git clone https://github.com/monikamunusamy/rust-rag-ai.git
 cd rust-rag-ai
+3. Set your API key
+Create a .env file in the project root and add your OpenAI key:
 
+env
+Copy code
+OPENAI_API_KEY=sk-xxxxxx
+Or export in your shell:
 
+bash
+Copy code
+export OPENAI_API_KEY=sk-xxxxxx
+▶️ Run
+Index your data
+bash
+Copy code
+cargo run -- index
+Ask questions
+bash
+Copy code
+cargo run -- chat "What is Rust ownership?"
+📂 Project Structure
+bash
+Copy code
+rust-rag-ai/
+├── Cargo.toml      # Rust dependencies
+├── src/
+│   └── main.rs     # Main entry point
+├── data/           # Example documents
+├── index/          # Vector index files
+└── .env            # API keys (ignored in git)
+📝 Example
+bash
+Copy code
+$ cargo run -- chat "Explain Rust borrowing"
+Answer: In Rust, borrowing lets you reference data without taking ownership...
+🔮 Next Steps
+Add more documents into data/
 
+Experiment with different models
 
+Extend to a web API or TUI
+
+Deploy on server with persistent index
+
+⚖️ License
+MIT License © 2025
+
+pgsql
+Copy code
+
+👉 Now it’s **one single cell**, copy once → paste into `README.md`.  
+
+Do you want me to also prepare a **GitHub Actions workflow (CI/CD)** so every push automatically tests `cargo build`?
