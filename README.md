@@ -23,5 +23,17 @@ The idea is simple:
 If you don’t have Rust yet:
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
 ### **2️⃣ Clone this repository**
+```bash
+git clone https://github.com/monikamunusamy/rust-rag-ai.git
+cd rust-rag-ai
+```
+
+### **3️⃣ Set your API key**
+Create a .env file in the project root:
+```bash
+OPENAI_API_KEY=sk-xxxxxx
+```
+
