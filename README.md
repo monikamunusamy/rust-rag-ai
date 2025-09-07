@@ -19,4 +19,4 @@ If you don’t have Rust yet:
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-***1. Install Rust ***
+###  **2. Clone this repository**:
