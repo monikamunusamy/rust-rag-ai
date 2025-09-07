@@ -36,4 +36,44 @@ Create a .env file in the project root:
 ```bash
 OPENAI_API_KEY=sk-xxxxxx
 ```
+### **▶️ Usage**
+📥 Index your data
+```bash
+cargo run -- index
+```
+
+### **💬 Ask questions**
+```bash
+cargo run -- chat "What is Rust borrowing?"
+```
+
+
+### **📂 Project Structure**
+
+rust-rag-ai/
+├── Cargo.toml      # Rust dependencies
+├── src/
+│   └── main.rs     # Main entry point
+├── data/           # Example documents
+├── index/          # Vector index files
+└── .env            # API keys (ignored in git)
+
+### **📝 Example**
+```bash
+
+$ cargo run -- chat "Explain Rust borrowing"
+Answer: In Rust, borrowing lets you reference data without taking ownership...
+```
+
+### **👩‍💻 About the Author**
+
+This project is built by Monika Munusamy 🌸, exploring the intersection of AI and Rust systems programming.
+
+🔗 Connect with me on:
+
+GitHub
+
+LinkedIn
+
+🚀 Let’s build smarter AI systems — open, efficient, and scalable!
 
