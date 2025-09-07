@@ -69,11 +69,4 @@ Answer: In Rust, borrowing lets you reference data without taking ownership...
 
 This project is built by Monika Munusamy 🌸, exploring the intersection of AI and Rust systems programming.
 
-🔗 Connect with me on:
-
-GitHub
-
-LinkedIn
-
-🚀 Let’s build smarter AI systems — open, efficient, and scalable!
 
