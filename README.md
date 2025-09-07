@@ -20,30 +20,21 @@ If you don’t have Rust yet:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ### 2. Clone this repository
-bash
-Copy code
 git clone https://github.com/monikamunusamy/rust-rag-ai.git
 cd rust-rag-ai
+
 3. Set your API key
 Create a .env file in the project root and add your OpenAI key:
 
-env
-Copy code
 OPENAI_API_KEY=sk-xxxxxx
-Or export in your shell:
 
-bash
-Copy code
-export OPENAI_API_KEY=sk-xxxxxx
-▶️ Run
+▶Run
 Index your data
-bash
-Copy code
 cargo run -- index
+
 Ask questions
-bash
-Copy code
-cargo run -- chat "What is Rust ownership?"
+cargo run -- index
+ 
 📂 Project Structure
 bash
 Copy code
